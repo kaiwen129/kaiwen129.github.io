@@ -1,6 +1,182 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        FINAL
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <h1>songs for ur mood</h1>
+    </div>
+    <div class="navbar">
+        <a class="navitem" id="happyselect">happy</a>
+        <a class="navitem" id="sadselect">sad</a>
+        <a class="navitem" id="loveselect">love</a>
+        <a class="navitem" id="chillselect">chill</a>
+        <a class="navitem" id="gymselect">gym</a>
+    </div>
+    <div id="happy">
+        <div class="song">
+            <img src="assets/radio.jpg" class="songpic"/>
+            <h2>Radio - Dayglow</h2>
+        </div>
+        <div class="song">
+            <img src="assets/moon.jpg" class="songpic"/>
+            <h2>Møøn - Joe Hertz, Nonô</h2>
+        </div>
+        <div class="song">
+            <img src="assets/stereotype.jpg" class="songpic"/>
+            <h2>Stereotype - STAYC</h2>
+        </div>
+    </div>
+    <div id="sad">
+        <div class="song">
+            <img src="assets/johnwayne.png" class="songpic"/>
+            <h2>John Wayne - Cigarettes After Sex</h2>
+        </div>
+        <div class="song">
+            <img src="assets/marvinsroom.jpg" class="songpic"/>
+            <h2>Marvin's Room - Drake</h2>
+        </div>
+        <div class="song">
+            <img src="assets/bandaids.jpg" class="songpic"/>
+            <h2>bandaids - keshi</h2>
+        </div>
+    </div>
+    <div id="love">
+        <div class="song">
+            <img src="assets/bestpart.jpg" class="songpic"/>
+            <h2>Best Part - Daniel Caesar, H.E.R.</h2>
+        </div>
+        <div class="song">
+            <img src="assets/someonelikeu.jpg" class="songpic"/>
+            <h2>someone like u - lullaboy</h2>
+        </div>
+        <div class="song">
+            <img src="assets/herewithme.jpg" class="songpic"/>
+            <h2>Here With Me - d4vd</h2>
+        </div>
+    </div>
+    <div id="chill">
+        <div class="song">
+            <img src="assets/gooddays.jpg" class="songpic"/>
+            <h2>Good Days - SZA</h2>
+        </div>
+        <div class="song">
+            <img src="assets/nicetoseeyou.jpg" class="songpic"/>
+            <h2>Nice to See You - Vansire</h2>
+        </div>
+        <div class="song">
+            <img src="assets/traingazing.jpg" class="songpic"/>
+            <h2>Traingazing - Sam Wills</h2>
+        </div>
+    </div>
+    <div id="gym">
+        <div class="song">
+            <img src="assets/wantsandneeds.jpg" class="songpic"/>
+            <h2>Wants and Needs - Drake, Lil Baby</h2>
+        </div>
+        <div class="song">
+            <img src="assets/stats.jpg" class="songpic"/>
+            <h2>STATS - Baby Keem</h2>
+        </div>
+        <div class="song">
+            <img src="assets/underthesun.jpg" class="songpic"/>
+            <h2>Under the Sun - Dreamville</h2>
+        </div>
+    </div>
+
+    <script>
+        const h = document.getElementById('happyselect');
+        const s = document.getElementById('sadselect');
+        const l = document.getElementById('loveselect');
+        const c = document.getElementById('chillselect');
+        const g = document.getElementById('gymselect');
+
+        h.addEventListener('click', function(){
+            document.getElementById('happy').style.display = "block";
+            document.getElementById('sad').style.display = "none";
+            document.getElementById('love').style.display = "none";
+            document.getElementById('chill').style.display = "none";
+            document.getElementById('gym').style.display = "none";
+
+            document.body.style.backgroundColor = "#F2E9E4";
+
+            document.getElementById('happyselect').style.backgroundColor = "#6C757D";
+            document.getElementById('sadselect').style.backgroundColor = "#495057";
+            document.getElementById('loveselect').style.backgroundColor = "#495057";
+            document.getElementById('chillselect').style.backgroundColor = "#495057";
+            document.getElementById('gymselect').style.backgroundColor = "#495057";
+        });
+
+        s.addEventListener('click', function(){
+            document.getElementById('happy').style.display = "none";
+            document.getElementById('sad').style.display = "block";
+            document.getElementById('love').style.display = "none";
+            document.getElementById('chill').style.display = "none";
+            document.getElementById('gym').style.display = "none";
+
+            document.body.style.backgroundColor = "#22223B";
+
+            document.getElementById('happyselect').style.backgroundColor = "#495057";
+            document.getElementById('sadselect').style.backgroundColor = "#6C757D";
+            document.getElementById('loveselect').style.backgroundColor = "#495057";
+            document.getElementById('chillselect').style.backgroundColor = "#495057";
+            document.getElementById('gymselect').style.backgroundColor = "#495057";
+        });
+
+        l.addEventListener('click', function(){
+            document.getElementById('happy').style.display = "none";
+            document.getElementById('sad').style.display = "none";
+            document.getElementById('love').style.display = "block";
+            document.getElementById('chill').style.display = "none";
+            document.getElementById('gym').style.display = "none";
+
+            document.body.style.backgroundColor = "#D0B8B3";
+
+            document.getElementById('happyselect').style.backgroundColor = "#495057";
+            document.getElementById('sadselect').style.backgroundColor = "#495057";
+            document.getElementById('loveselect').style.backgroundColor = "#6C757D";
+            document.getElementById('chillselect').style.backgroundColor = "#495057";
+            document.getElementById('gymselect').style.backgroundColor = "#495057";
+        });
+
+        c.addEventListener('click', function(){
+            document.getElementById('happy').style.display = "none";
+            document.getElementById('sad').style.display = "none";
+            document.getElementById('love').style.display = "none";
+            document.getElementById('chill').style.display = "block";
+            document.getElementById('gym').style.display = "none";
+
+            document.body.style.backgroundColor = "#9A8C98";
+
+            document.getElementById('happyselect').style.backgroundColor = "#495057";
+            document.getElementById('sadselect').style.backgroundColor = "#495057";
+            document.getElementById('loveselect').style.backgroundColor = "#495057";
+            document.getElementById('chillselect').style.backgroundColor = "#6C757D";
+            document.getElementById('gymselect').style.backgroundColor = "#495057";
+        });
+
+        g.addEventListener('click', function(){
+            document.getElementById('happy').style.display = "none";
+            document.getElementById('sad').style.display = "none";
+            document.getElementById('love').style.display = "none";
+            document.getElementById('chill').style.display = "none";
+            document.getElementById('gym').style.display = "block";
+
+            document.body.style.backgroundColor = "#4A4E69";
+
+            document.getElementById('happyselect').style.backgroundColor = "#495057";
+            document.getElementById('sadselect').style.backgroundColor = "#495057";
+            document.getElementById('loveselect').style.backgroundColor = "#495057";
+            document.getElementById('chillselect').style.backgroundColor = "#495057";
+            document.getElementById('gymselect').style.backgroundColor = "#6C757D";
+        });
+
+        
+     </script>
+</body>
 </html>

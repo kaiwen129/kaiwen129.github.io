@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Chivo+Mono:wght@100;300;400&family=DM+Sans:wght@400;500&family=Playfair+Display+SC&display=swap');
+
+.title {
+    font-family: Chivo Mono;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 150%;
+    font-style: italic;
+}
+
+.navbar{
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-color: #495057;
+    color: #F8F9FA;
+}
+.navitem{
+    margin: 0 auto;
+    background-color: #495057;
+    width: 80px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 1s ease;
+}
+#happyselect{
+    background-color: #6C757D;
+}
+.song{
+    display: flex;
+    background-color: #EEEEEE;
+    width: 400px;
+    border-radius: 50px;
+    margin: 30px auto;
+    padding: 30px 50px;
+    line-height: 100%;
+    border-style: solid;
+    border-width: 3px;
+    align-items: center;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+}
+.songpic{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+#sad, #love, #chill, #gym {
+    display: none;
+}
+body {
+    background-color: #F2E9E4;
+    transition: background-color 1.5s ease;
+    font-family: Bebas Neue;
+}
